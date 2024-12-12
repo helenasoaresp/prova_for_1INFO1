@@ -5,13 +5,20 @@
     let listaNumeros = [10, 3, 5, 7, 9, 2, 11];
     */
     //AQUI, USE FOR...OF!
-    
-    //Entrada
 
+    //Entrada
+    let listaNumeros = [10, 3, 5, 7, 9, 2, 11];
 
     //Processamento
+    for (let item of listaNumeros) {
+        listaNumeros.sort((a, b) => a - b)
+    }
 
+    let maior = listaNumeros.slice(-1)
+    let menor = listaNumeros[0]
 
     //Saída
+    document.write(`O maior número da lista é: ${maior} <br>
+    O menor número da lista é: ${menor} `);
 
 </script>

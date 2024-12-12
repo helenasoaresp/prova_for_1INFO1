@@ -8,11 +8,18 @@
     //AQUI, USE QUALQUER ESTRUTURA DE REPEETIÇÃO QUE DESEJAR!
 
     //Entrada
-
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    let palindromos = [];
 
     //Processamento
-
+    for (let contador = 0; contador < lista.length; contador++) {
+        const descobrir = lista[contador] ;
+        if (palindromos.includes(descobrir) == false ) {
+            palindromos.push(descobrir);
+        }
+    }
 
     //Saída
+    document.write(palindromos);
 
 </script>

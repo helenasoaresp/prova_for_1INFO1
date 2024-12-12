@@ -6,11 +6,20 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
+    const numeroN = Number(prompt("Informe um número: "));
 
+    let impares = [];
+    let soma = 0;
 
     //Processamento
-
+    for (contador = 1; contador <= numeroN; contador++) {
+        if(contador % 2 != 0) {
+            impares.push(contador)
+            soma = soma + contador;
+        }
+    }
 
     //Saída
+    document.write(`A soma dos números impares é: ${soma}`);
 
 </script>

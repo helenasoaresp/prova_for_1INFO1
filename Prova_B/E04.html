@@ -10,11 +10,19 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numInicial = Number(prompt(`Informe um número inteiro positivo inicial`));
+    const numFinal = Number(prompt(`Informe um número inteiro positivo inicial`));
+    let primo = [];
 
     //Processamento
-
+    for (let contador = numInicial; contador <= numFinal; contador++) {
+        if (contador % 2 != 0) {
+            primo.push(contador)
+        }
+    }
 
     //Saída
+    document.write(primo);
+    
 
 </script>
